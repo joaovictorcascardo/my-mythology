@@ -1,4 +1,3 @@
-````markdown
 # 🏛️ My Mythology - Galeria Interativa
 
 Projeto desenvolvido para a 1ª Etapa da disciplina de Frameworks Front-end (React). Esta aplicação é uma galeria interativa que gerencia uma lista mitológica.
@@ -25,8 +24,8 @@ Criar uma interface funcional utilizando os conceitos fundamentais do React:
 
 ```bash
 git clone https://github.com/joaovictorcascardo/my-mythology.git
+
 ```
-````
 
 2. Acesse a pasta do projeto:
 
@@ -44,8 +43,4 @@ npm install
 
 ```bash
 npm run dev
-```
-
-```
-
 ```
