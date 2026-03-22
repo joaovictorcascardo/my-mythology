@@ -1,9 +1,11 @@
 export const criaturas = [
   {
     id: 0,
-    nome: "Item de Exemplo",
-    categoria: "Base",
-    imagem: "",
-    descricao: "Estrutura inicial do objeto.",
+    nome: "nome",
+    categoria: "blabla",
+    imagem: "https://anthares.us/medusa-mitologia-grega/",
+    descricao:
+      "blabla",
   },
+  
 ];
