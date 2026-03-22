@@ -1,16 +1,51 @@
-# React + Vite
+````markdown
+# 🏛️ My Mythology - Galeria Interativa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido para a 1ª Etapa da disciplina de Frameworks Front-end (React). Esta aplicação é uma galeria interativa que gerencia uma lista mitológica.
 
-Currently, two official plugins are available:
+## 🎯 O Desafio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Criar uma interface funcional utilizando os conceitos fundamentais do React:
 
-## React Compiler
+- **Estado (`useState`)**
+- **Efeitos (`useEffect`)**
+- **Componentização (Props)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Funcionalidades (Requisitos)
 
-## Expanding the ESLint configuration
+- **Base de Dados Interna:** Array com pelo menos 10 objetos contendo informações dos itens mitológicos.
+- **Listagem Dinâmica:** Uso do método `.map()` para renderização dos cards.
+- **Componentização:** Componente `Card` isolado recebendo dados via `props`.
+- **Filtro de Categoria:** Filtragem de itens na tela por tipo (ex: Deuses, Criaturas, Relíquias).
+- **Barra de Busca:** Input para filtrar os itens pelo nome em tempo real.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Como executar o projeto
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/joaovictorcascardo/my-mythology.git
+```
+````
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd my-mythology
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+```
+
+```
