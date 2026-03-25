@@ -8,14 +8,8 @@ function App() {
         🏛️ My Mythology
       </h1>
       <div className="mx-auto grid max-w-5xl gap-6 text-left sm:grid-cols-2 lg:grid-cols-3">
-        {criaturas.map((c) => (
-          <CardCriatura
-            key={c.id}
-            nome={c.nome}
-            categoria={c.categoria}
-            imagem={c.imagem}
-            descricao={c.descricao}
-          />
+        {criaturas.map(({ id, ...props }) => (
+        <CardCriatura key={id} {...props} />
         ))}
       </div>
     </div>
