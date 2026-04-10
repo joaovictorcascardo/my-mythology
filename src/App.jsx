@@ -25,9 +25,17 @@ function App() {
       />
 
       <div className="mx-auto grid max-w-5xl gap-6 text-left sm:grid-cols-2 lg:grid-cols-3">
-        {criaturasFiltradas.map(({ id, ...props }) => (
-          <CardCriatura key={id} {...props} />
-        ))}
+        
+        {criaturasFiltradas.length > 0 ? (
+          criaturasFiltradas.map(({ id, ...props }) => (
+            <CardCriatura key={id} {...props} />
+          ))
+        ) : (
+          <p className="col-span-full text-center text-gray-500 text-lg">
+            Nenhuma criatura ou deus encontrado com esse nome.
+          </p>
+        )}
+
       </div>
     </div>
   );
