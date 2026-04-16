@@ -1,12 +1,12 @@
 export default function SearchBar({ valor, aoDigitar }) {
   return (
-    <div className="mb-8">
+    <div className="w-full max-w-sm">
       <input
         type="text"
-        placeholder="PESQUISAR SUA CRIATURA"
+        placeholder="Pesquisar registros..."
         value={valor}
         onChange={(e) => aoDigitar(e.target.value)}
-        className="w-full max-w-md p-2 border border-red-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+        className="w-full p-3 bg-stone-800 border border-stone-600 rounded-md text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-600 focus:ring-1 focus:ring-amber-600 transition-colors shadow-inner"
       />
     </div>
   );
