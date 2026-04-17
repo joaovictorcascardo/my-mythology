@@ -10,6 +10,8 @@ function App() {
   const [categoria, setCategoria] = useState("");
   const [atributosSelecionados, setAtributosSelecionados] = useState([]);
 
+
+  //Ou esse prev ai eh valor anteior
   const alternarAtributo = (valor) => {
     if (valor === "") {
       setAtributosSelecionados([]);
