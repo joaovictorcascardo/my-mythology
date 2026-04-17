@@ -1,17 +1,27 @@
 export default function Filtros({ categoriaSelecionada, aoMudarCategoria }) {
+  const categorias = [
+    { valor: "", rotulo: "Todas" },
+    { valor: "Mitologia Grega", rotulo: "Grega" },
+    { valor: "Mitologia Nórdica", rotulo: "Nórdica" },
+    { valor: "Mitologia Egípcia", rotulo: "Egípcia" },
+    { valor: "Mitologia Japonesa", rotulo: "Japonesa" },
+  ];
+
   return (
-    <div className="mb-8">
-      <select
-        value={categoriaSelecionada}
-        onChange={(e) => aoMudarCategoria(e.target.value)}
-        className="w-full max-w-md p-2 border border-red-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
-      >
-        <option value="">Todas as Mitologias</option>
-        <option value="Mitologia Grega">Mitologia Grega</option>
-        <option value="Mitologia Nórdica">Mitologia Nórdica</option>
-        <option value="Mitologia Egípcia">Mitologia Egípcia</option>
-        <option value="Mitologia Japonesa">Mitologia Japonesa</option>
-      </select>
+    <div className="mb-8 flex flex-wrap justify-center gap-3">
+      {categorias.map((cat) => (
+        <button
+          key={cat.valor}
+          onClick={() => aoMudarCategoria(cat.valor)}
+          className={`px-5 py-2 rounded-full font-medium transition-all duration-300 ease-in-out border-2 ${
+            categoriaSelecionada === cat.valor
+              ? "bg-red-600 text-white border-red-600 shadow-md transform scale-105"
+              : "bg-white text-gray-700 border-red-200 hover:border-red-400 hover:bg-red-50 hover:text-red-700"
+          }`}
+        >
+          {cat.rotulo}
+        </button>
+      ))}
     </div>
   );
 }
