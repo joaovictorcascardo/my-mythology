@@ -19,10 +19,10 @@ export default function FiltroAtributo({ atributosSelecionados = [], aoAlternarA
           <button
             key={attr.valor}
             onClick={() => aoAlternarAtributo(attr.valor)}
-            className={`px-5 py-2 rounded-full font-medium transition-all duration-300 ease-in-out border-2 ${
+            className={`px-5 py-2 text-xs uppercase tracking-widest transition-all duration-300 ease-in-out border rounded-sm ${
               isSelected
-                ? "bg-blue-600 text-white border-blue-600 shadow-md transform scale-105"
-                : "bg-white text-gray-700 border-blue-200 hover:border-blue-400 hover:bg-blue-50 hover:text-blue-700"
+                ? "bg-zinc-800/80 text-zinc-200 border-zinc-600/50"
+                : "bg-transparent text-zinc-600 border-transparent hover:text-zinc-400"
             }`}
           >
             {attr.rotulo}

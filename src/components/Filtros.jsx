@@ -13,10 +13,11 @@ export default function Filtros({ categoriaSelecionada, aoMudarCategoria }) {
         <button
           key={cat.valor}
           onClick={() => aoMudarCategoria(cat.valor)}
-          className={`px-5 py-2 rounded-full font-medium transition-all duration-300 ease-in-out border-2 ${categoriaSelecionada === cat.valor
-              ? "bg-red-600 text-white border-red-600 shadow-md transform scale-105"
-              : "bg-white text-gray-700 border-red-200 hover:border-red-400 hover:bg-red-50 hover:text-red-700"
-            }`}
+          className={`px-6 py-2.5 text-xs uppercase tracking-widest transition-all duration-300 ease-in-out border rounded-sm ${
+            categoriaSelecionada === cat.valor
+              ? "bg-amber-900/20 text-amber-500 border-amber-700/50 shadow-[0_0_15px_rgba(180,83,9,0.15)]"
+              : "bg-zinc-900/40 text-zinc-500 border-zinc-800/80 hover:border-zinc-700 hover:text-zinc-300"
+          }`}
         >
           {cat.rotulo}
         </button>
